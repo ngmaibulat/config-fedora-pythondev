@@ -31,3 +31,7 @@ sudo dnf -y install sqlite-devel tk-devel xz-devel
 
 sudo systemctl enable sshd
 sudo systemctl start sshd
+
+
+### snap
+sudo dnf -y install snapd
