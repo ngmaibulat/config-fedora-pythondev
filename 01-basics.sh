@@ -1,7 +1,7 @@
 ### updates
 
-sudo dnf update
-sudo flatpak update
+sudo dnf -y update
+sudo flatpak -y update
 
 ### basic packages
 sudo dnf install -y \
@@ -15,7 +15,7 @@ sudo dnf install -y \
     unzip
 
 ### python related
-python3-pip
+sudo dnf -y install python3-pip
 
 ### status of vm-toolsd
 
@@ -23,8 +23,8 @@ sudo systemctl status vmtoolsd
 
 
 ### libs needed for pyenv to build python versions
-sudo dnf install zlib-devel gcc openssl-devel bzip2-devel ncurses-devel libffi-devel readline-devel
-sudo dnf install sqlite-devel tk-devel xz-devel
+sudo dnf -y install zlib-devel gcc openssl-devel bzip2-devel ncurses-devel libffi-devel readline-devel
+sudo dnf -y install sqlite-devel tk-devel xz-devel
 
 
 ### enable sshd
