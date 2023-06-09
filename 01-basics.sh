@@ -17,7 +17,17 @@ sudo dnf install -y \
 ### python related
 python3-pip
 
+### status of vm-toolsd
+
+sudo systemctl status vmtoolsd
+
 
 ### libs needed for pyenv to build python versions
 sudo dnf install zlib-devel gcc openssl-devel bzip2-devel ncurses-devel libffi-devel readline-devel
 sudo dnf install sqlite-devel tk-devel xz-devel
+
+
+### enable sshd
+
+sudo systemctl enable sshd
+sudo systemctl start sshd
